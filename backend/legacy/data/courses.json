@@ -1,0 +1,16 @@
+[
+  {
+    "id": "seed-1",
+    "title": "Cloud Native Applications",
+    "details": "Build and deploy services on IBM Cloud.",
+    "semester": "Fall 2025",
+    "enrollstatus": "Enrolled"
+  },
+  {
+    "id": "seed-2",
+    "title": "Web Development",
+    "details": "HTML, CSS, JavaScript, and Node.js fundamentals.",
+    "semester": "Fall 2025",
+    "enrollstatus": "Waitlist"
+  }
+]

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --heading-font: "Sora", "Plus Jakarta Sans", "Segoe UI", sans-serif;
+  --heading-main: #1f2a44;
+  --heading-soft: #5f6b86;
+  --heading-accent: rgba(141, 161, 197, 0.42);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --heading-main: #edf2ff;
+  --heading-soft: #b4c0dc;
+  --heading-accent: rgba(107, 127, 165, 0.55);
+}
+
+body {
+  @apply min-h-screen bg-base-50 text-base-900 antialiased;
+  font-family: "Plus Jakarta Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image:
+    radial-gradient(circle at 12% 10%, rgba(189, 199, 224, 0.35), transparent 32%),
+    radial-gradient(circle at 88% 82%, rgba(188, 202, 227, 0.24), transparent 35%),
+    linear-gradient(160deg, #aeb8cf 0%, #b7c2d8 42%, #a6b2cd 100%);
+}
+
+:root[data-theme="dark"] body {
+  background-image:
+    radial-gradient(circle at 10% 14%, rgba(73, 86, 115, 0.38), transparent 32%),
+    radial-gradient(circle at 88% 86%, rgba(54, 66, 92, 0.36), transparent 36%),
+    linear-gradient(155deg, #151b27 0%, #111827 45%, #171f31 100%);
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+.brand-title,
+.page-title,
+.panel-title {
+  font-family: var(--heading-font);
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  color: var(--heading-main);
+}
+
+.brand-title {
+  letter-spacing: -0.05em;
+}
+
+.page-title,
+.panel-title {
+  position: relative;
+  display: inline-block;
+  text-wrap: balance;
+}
+
+.page-title::after,
+.panel-title::after {
+  content: "";
+  position: absolute;
+  left: 0.02em;
+  right: 0.02em;
+  bottom: -0.1em;
+  height: 0.15em;
+  z-index: -1;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--heading-accent), rgba(255, 255, 255, 0));
+}
+
+.title-support {
+  color: var(--heading-soft);
+}
