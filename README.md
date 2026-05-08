@@ -1,4 +1,11 @@
+# Group 29 - My Courses Project
 
+## Team Members
+
+- Group Number: 29
+- Pratyush Anand - 23BEC039
+
+## Project Overview
 
 My Courses is a full-stack course management application with:
 
@@ -10,7 +17,7 @@ My Courses is a full-stack course management application with:
 ## Current Repository Structure
 
 ```text
-Group31Finalproject/
+Group29Finalproject/
 ├── README.md
 ├── backend/
 │   ├── package.json
