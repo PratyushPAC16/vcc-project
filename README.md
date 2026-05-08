@@ -1,11 +1,4 @@
-# Group 31 - My Courses Project
 
-## Team Members
-
-- Group Number: 29
-- Pratyush Anand - 23BEC039
-
-## Project Overview
 
 My Courses is a full-stack course management application with:
 
